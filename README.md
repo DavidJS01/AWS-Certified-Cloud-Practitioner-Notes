@@ -1,5 +1,5 @@
 # AWS-Certified-Cloud-Practitioner-Notes
-Studying for the AWS CCP exam! This repo serves more as an outline than a comprehensive learning resource. I will include AWS documentation and other resources used when applicable.
+Studying for the AWS CCP exam! This repo serves as a personal resource.. I will include AWS documentation and other resources used when applicable.
 
 # Examination Content
 | Domain | % of Examination|
