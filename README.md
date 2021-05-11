@@ -12,6 +12,7 @@ Studying for the AWS CCP exam! This repo serves as a personal resource. I will i
 ## Domain One: Cloud Concepts
 
 https://d1.awsstatic.com/whitepapers/aws-overview.pdf
+https://docs.aws.amazon.com/wellarchitected/latest/framework/wellarchitected-framework.pdf#welcome
 https://aws-certified-cloud-practitioner.fandom.com/wiki/1.3_List_the_different_cloud_architecture_design_principles
 
 __Objectives:__
@@ -149,7 +150,7 @@ See the AWS Security Whitepaper: https://docs.aws.amazon.com/whitepapers/latest/
 
 AWS works on a shared seucrity responsibility model:
 
-1. AWS is responsible for the seucrity of the underlying cloud infrastructure
+1. AWS is responsible for the security of the underlying cloud infrastructure
 2. AWS users are responsible for securing workloads deployed in AWS
 
 AWS provides ample security features:
@@ -161,3 +162,24 @@ AWS provides ample security features:
 5. WAF to protect web applications from SQL injections and other vulnerabilities
 6. CloudWatch logs to collect logs
 7. CloudTrail for auditing AWS API calls
+
+## Domain Two: Security and Compliance
+
+**Objectives:**
+1. Define the AWS shared responsibility model
+2. Define AWS Cloud security and compliance concepts
+3. Identify AWS access management capabilities
+4. Identify resources for security support
+
+### Define the AWS Shared Responsibility Model
+
+Security and Compliance is a shared responsibility between AWS and the customer.
+
+|AWS Responsibilies|Customer Responsibilities|
+|------------------|-------------------------|
+|AWS is responsible for protecting the infrastructure that runs all AWS Cloud services.| Customers are responsible for securing workloads deployed in AWS|
+
+![image](https://user-images.githubusercontent.com/53328559/117754869-0d563700-b1d0-11eb-9305-78b35a9815e3.png)
+
+
+
