@@ -1,5 +1,5 @@
 # AWS-Certified-Cloud-Practitioner-Notes
-Studying for the AWS CCP exam! This repo serves as a personal resource.. I will include AWS documentation and other resources used when applicable.
+Studying for the AWS CCP exam! This repo serves as a personal resource. I will include AWS documentation and other resources used when applicable.
 
 # Examination Content
 | Domain | % of Examination|
@@ -83,7 +83,7 @@ There are two types of scaling:
 
 Resources should be treated as temporary disposable resources rather than fixed permanent on-premises resources.
 
-AWS focuses on *immutable infrastructure*: a server once launched is never updated through its lifetime. Updates are performed on a new server with the latest configuration, ensuring resources are in a cosistent state with easier rollbacks.
+AWS focuses on *immutable infrastructure*: a server, once launched, is never updated through its lifetime. Updates are performed on a new server with the latest configuration, ensuring resources are in a consistent state with easier rollbacks.
 
 AWS provides different ways to instantiate resources in an automated and repeatable way:
   1. Boostrapping: scripts for configuration and setup
