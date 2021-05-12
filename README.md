@@ -171,7 +171,7 @@ AWS provides ample security features:
 3. Identify AWS access management capabilities
 4. Identify resources for security support
 
-### Define the AWS Shared Responsibility Model
+### Security and Compliance: Define the AWS Shared Responsibility Model
 
 Security and Compliance is a shared responsibility between AWS and the customer.
 
@@ -181,5 +181,72 @@ Security and Compliance is a shared responsibility between AWS and the customer.
 
 ![image](https://user-images.githubusercontent.com/53328559/117754869-0d563700-b1d0-11eb-9305-78b35a9815e3.png)
 
+### Security and Compliance: Define AWS Cloud Security and Compliance Concepts
+
+- Infrastructure Security
+  - Network firewalls are built into Amazon VPC to allow private networks and controlled access; can control encryption with TLS
+  - Connectivity options that allow private or dedicated connects from office or on-premise site
+  - DDoS mitigation that can be applied as part of application and content delivery strategies
+  - Automatic encryption of traffic on AWS global and regional networks
+
+- Data Encryption
+  - Data at rest encryption capabilities available in most AWS services
+  - Flexible key management options, including the AWS Key Management Service
+  - Hardware0based cryptographic key storage using AWS CloudHSM
+  - Encrypted message queues for sensitive data using server-side encryption for Amazon SQS 
+
+- Identity and Access Control
+  - AWS Identify and Access Management (IAM) allows users to define individual accounts with permissions across AWS resources
+  - AWS Single-Sign-On allows the management of SSO access and user permissions
+
+- Monitoring and Logging
+  - AWS CloudTrail allows you to monitor AWS deployments with a history of AWS API calls for your account
+  - AWS CloudWatch provides reliable, scalable, and flexible monitoring 
+  - Amazon GuardDuty is a threat detection service that monitors for malicious activity and unauthorized behavior  
 
 
+### Security and Compliance: Define AWS Access Management Capabilities
+
+AWS access management is provided by AWS IAM: Identity and Access Management. This allows users to securely control access to AWS services and resources. IAM can create and manage AWS users and groups with permissions to allow and deny their access to AWS resources.
+
+IAM allows you to:
+
+1. Manage IAM users and their access
+  1. Assign individual security credentials or request temporary security credentials
+2. Manage IAM roles and their permissions
+  1. Create roles in IAM and manage permissions to control what operations can be performed that assumes the role
+3. Manage federated users and their permissions
+  1. Enable identity federation to allow existing identities in your enterprise to access the AWS Management Console, call APIs, and access resources without the need for an individual IAM   
+
+- Access and Federation
+  - You can grant other people permission to admiister and use resources in your AWS account with sharing a password or access key
+- Granular Permissions
+  - You can grant different permissions to different people for different resources
+    - For example: You can grant users complete access to EC2, S3, etc., but for other users you can read-only access to some S3 buckets or to only access your billing information
+  - IAM also allows specific conditions such as time of day to control how a user can utilize AWS, their originating IP address, whether they are using SSL, or if they authenticated with a multi-factor authentification device
+- Securing Application Access
+  - IAM features can securely give applications on EC2 instances the credentials needed to access other AWS resources
+- Multi Factor Authentification
+  - Multi factor authentification support can be added to your account and individual users
+
+### Security and Compliance: Identify Resources for Security Support
+
+- AWS Support
+  - Real-time insight with AWS Trusted Advisor: Business and Enterprise Level Support
+    - Trusted Advisor is an online tool that acts as a cloud expert, helping users provision resources by following best practices
+    - Inspects the AWS environment to find opportunities to save money, improve performance and reliability, and to close security gaps
+  - Support and advocacy through Technical Account Manager: Enterprise Support
+    - Technical Account Managers provide technical expertise across AWS services; they work closely with customers to deliver guidance and recommendations
+- Professional Services
+  - Enterprise Security Architecture
+    - Evaluate nature of workloads deployed to AWS and security needs. Define an architecture and set of security controls that will protect your data and workloads to best practices
+  - Policies and Controls-Mapping
+    - Examine requirements based on security policy and any third party mandates
+    - Provide detailed recommendations on how to satisfy those requirements and display compliance
+  - Security Operations Playbook
+    - Define the right organizational structures and processes to ensure security controls are working correctly
+    - Detect and respond to security issues that arise in the AWS environment
+  - Business Unit Workshops
+    - Work with IT and Business Leaders across your organization to understand their plans and strategies around Cloud adoption
+    - Educate them on the best way to satisfy their requirements while minimizing risk
+    - Devise an organization-wide security framework for deploying workloads on AWS        
